@@ -1,7 +1,15 @@
 include <Magpie/magpie.scad>;
 include <relations.scad>;
 
-module middle_clamp(length, clampRadius, rodDia, height, holes, holeDia){
+module middle_clamp(length, clampRadius, rodDia, height, holes, holeDia, debug=0){
+	if (debug ==1){
+		echo(str("Middle clamp length : ", length));
+		echo(str("Middle clamp radius : ", clampRadius));
+		echo(str("Middle clamp rod diameter : ", rodDia));
+		echo(str("Middle clamp height : ", height));
+		echo(str("Middle clamp utility hole count : ", holes));
+		echo(str("Middle clamp utility hole diameter : ", holeDia));	
+	}
 	difference(){
 		union(){
 			hull(){
