@@ -6,7 +6,7 @@ stepperObj = object(stepper);
 bearingObj = object(bearing);
 screwObj = object(screw);
 
-baseRadius = 10;
+baseRadius = 12;
 baseHeight = 10;
 riderRadius = 14;
 

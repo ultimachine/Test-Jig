@@ -8,7 +8,7 @@ linear_bearing = "LM8UU";
 stepper = "NEMA17";
 
 //bearing
-bearing = "625ZZ";
+bearing = "608ZZ";
 
 //screw
 screw = "M3";
