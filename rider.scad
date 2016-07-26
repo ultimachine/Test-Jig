@@ -14,7 +14,7 @@ module rider_sketch(){
 		translate([size,size])poly_circle(r=linearBearingObj[OUTER_DIAMETER]/2);
 		translate([50,size])poly_circle(r=screwObj[DIAMETER]/2);
 		translate([25,size])poly_circle(r=screwObj[DIAMETER]/2);
-		translate([0,size])poly_circle(rscrewObj[DIAMETER]/2);
+		translate([0,size])poly_circle(screwObj[DIAMETER]/2);
 		translate([size+linearBearingObj[OUTER_DIAMETER]/2-3,size-35])square([3,35]);
 		translate([size+linearBearingObj[OUTER_DIAMETER]/2-3,size-35])square([riderRadius,3]);
 	}
