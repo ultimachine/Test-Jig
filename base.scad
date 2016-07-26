@@ -9,9 +9,9 @@ module base_sketch(screw, stepper, bearing, linear_bearing, size){
 	difference(){
 		union(){
 			translate([size,size])circle(r=baseRadius);
-			translate([size-baseRadius,30])square([baseRadius*2,45]);
+			translate([size-baseRadius,30])square([baseRadius*2,size-30]);
 			translate([size-baseRadius,10])square([baseRadius,50]);
-			translate([-10,size-baseRadius])square([85,baseRadius*2]);
+			translate([-10,size-baseRadius])square([size+10,baseRadius*2]);
 			translate([-30,size])square([100,baseRadius]);
 		}
 		translate([size,size])poly_circle(r=linearBearingObj[INNER_DIAMETER]/2);
@@ -47,4 +47,4 @@ module base_asm(){
 	for(i = [0:90:360])rotate([0,0,i])base_side();
 }
 
-base_side(screw, stepper, bearing, linear_bearing, size,stepperObj[WIDTH]/2);
+base_side(screw, stepper, bearing, linear_bearing, size,baseHeight);
