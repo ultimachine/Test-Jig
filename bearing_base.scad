@@ -1,4 +1,4 @@
-include <Magpie/mapie.scad>;
+include <Magpie/magpie.scad>;
 include <relations.scad>;
 
 /* module bearing_base(bearing, screw, height)
