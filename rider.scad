@@ -5,9 +5,9 @@ module rider_sketch(){
 	difference(){
 		union(){
 			translate([size,size])circle(r=riderRadius);
-			translate([size-riderRadius,30])square([riderRadius*2,45]);
+			translate([size-riderRadius,30])square([riderRadius*2,size-30]);
 			translate([size-riderRadius,10])square([riderRadius,50]);
-			translate([-10,size-riderRadius])square([85,riderRadius*2]);
+			translate([-10,size-riderRadius])square([size+10,riderRadius*2]);
 			translate([-30,size])square([100,riderRadius]);
 			translate([-5.5,size+riderRadius])square([11,35]);
 		}
