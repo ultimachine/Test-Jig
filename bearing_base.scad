@@ -55,4 +55,4 @@ module bearing_base(bearing, screw, height){
 	}
 }
 
-bearing_base(bearing, screw,stepperObj[WIDTH]/2 );
+bearing_base(bearing, screw,baseHeight );
